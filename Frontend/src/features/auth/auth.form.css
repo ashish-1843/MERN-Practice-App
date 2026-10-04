@@ -1,0 +1,81 @@
+main{
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .form-container{
+        padding-inline: 3rem;
+        padding-block: 2rem;
+        border-radius: 1rem;
+        background-color: rgb(3, 43, 96);
+        min-width: 400px;
+        display:flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        h1{
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        position: relative;
+
+        .pass-btn{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: transparent;
+            color: rgba(0, 0, 0, 0.719);
+            border: none;
+            padding-inline: 12px;
+            padding-block: 12px;
+            cursor: pointer;
+        }
+    }
+
+    input{
+        border: none;
+        outline: none;
+        padding-inline: 1rem;
+        padding-block: 0.75rem;
+        border-radius: 0.5rem;
+        background-color: white;
+        color : black;
+    }
+
+    .otp-input{
+        display: flex;
+        gap: 1rem;
+
+        input{
+            font-size: 18px;
+            text-align: center;
+            font-weight: 600;
+            width: 60px;
+            height: 60px;
+            background-color: rgba(245, 245, 245, 0.608);
+            color: rgba(0, 0, 0, 0.734)
+        }
+    }
+
+    label{
+        font-weight: 600;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(247, 27, 27);
+        font-size: 16px;
+    }
+
+
+}
