@@ -4,11 +4,13 @@ import { useAuth } from '@/features/auth/hooks/useAuth'
 import { ArrowRight, Zap } from 'lucide-react'
 import '../dashboard.css'
 import React from 'react'
+import { useNavigate } from 'react-router';
 
 
 const Dashboard = () => {
 
   const { user } = useAuth();
+  const navigate = useNavigate();
   return (
     <main className="relative w-full md:h-[800px] h-screen overflow-hidden">
       <div className='main-container py-12 md:py-24 lg:py-32 xl:py-48'>
@@ -43,12 +45,14 @@ const Dashboard = () => {
               <p className="text-sm text-green-800">
                 Free forever • No credit card required • 2 minutes setup
               </p>
+
+              
+
             </div>
           </div>
         </div>
       </div>
     </main>
-
 
   )
 }

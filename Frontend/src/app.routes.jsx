@@ -5,6 +5,7 @@ import Protected from './features/auth/components/Protected';
 import Dashboard from './features/Dashboard/pages/Dashboard';
 import VerifyEmail from './features/auth/components/VerifyEmail';
 import Navbar from './features/Dashboard/components/Navbar';
+import CreateToDo from './features/Dashboard/components/CreateToDo';
 
 
 export const router = createBrowserRouter([
@@ -23,5 +24,9 @@ export const router = createBrowserRouter([
     {
         path: '/verify-email',
         element: <VerifyEmail/>
+    },
+    {
+        path: '/create-todo',
+        element: <Protected><Navbar/><CreateToDo/></Protected>
     }
 ])
